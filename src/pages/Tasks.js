@@ -1,11 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
+import { toast } from 'react-toastify'
 
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import Button from '@mui/joy/Button'
 import Divider from '@mui/joy/Divider'
-
-import { toast } from 'react-toastify'
 
 import {
   createTask,

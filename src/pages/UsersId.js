@@ -1,11 +1,12 @@
+import { useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import Breadcrumbs from '@mui/joy/Breadcrumbs'
 import Link from '@mui/joy/Link'
 import Divider from '@mui/joy/Divider'
-
-import { useParams, useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
 
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded'
@@ -25,6 +26,8 @@ function UsersId() {
   useEffect(() => {
     if (error && error.status === 404) {
       navigate('/users')
+
+      toast.error('User not found!', { position: 'bottom-right', hideProgressBar: true })
     }
   }, [error])
 
