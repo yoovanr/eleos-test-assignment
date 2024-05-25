@@ -33,7 +33,11 @@ function Users() {
           <HomeRoundedIcon />
         </Link>
 
-        <Typography color="primary" fontWeight={500} fontSize={12}>
+        <Typography
+          color="primary"
+          fontWeight={500}
+          fontSize={12}
+        >
           Users
         </Typography>
       </Breadcrumbs>

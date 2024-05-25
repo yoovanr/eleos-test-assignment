@@ -27,7 +27,10 @@ function UsersId() {
     if (error && error.status === 404) {
       navigate('/users')
 
-      toast.error('User not found!', { position: 'bottom-right', hideProgressBar: true })
+      toast.error('User not found!', {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      })
     }
   }, [error])
 

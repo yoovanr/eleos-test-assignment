@@ -16,7 +16,6 @@ function TasksList({ data, onUpdate, onDelete }) {
           <TasksCard
             key={item.id}
             item={item}
-
             onUpdate={onUpdate}
             onDelete={onDelete}
           />

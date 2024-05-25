@@ -26,6 +26,7 @@ import {
 import AppLayout from '../components/App/AppLayout'
 
 import TasksList from '../components/Tasks/TasksList'
+
 import TasksModalCreate from '../components/Tasks/TasksModalCreate'
 import TasksModalUpdate from '../components/Tasks/TasksModalUpdate'
 import TasksModalDelete from '../components/Tasks/TasksModalDelete'
@@ -45,7 +46,10 @@ function Tasks() {
 
     onCloseCreateTask()
 
-    toast.success('Task has been created!', { position: 'bottom-right', hideProgressBar: true })
+    toast.success('Task has been created!', {
+      position: 'bottom-right',
+      hideProgressBar: true,
+    })
   }
 
   const onSuccessUpdateTask = (task) => {
@@ -53,7 +57,10 @@ function Tasks() {
 
     onCloseUpdateTask()
 
-    toast.success('Task has been updated!', { position: 'bottom-right', hideProgressBar: true })
+    toast.success('Task has been updated!', {
+      position: 'bottom-right',
+      hideProgressBar: true,
+    })
   }
 
   const onSuccessDeleteTask = (task) => {
@@ -61,7 +68,10 @@ function Tasks() {
 
     onCloseDeleteTask()
 
-    toast.success('Task has been deleted!', { position: 'bottom-right', hideProgressBar: true })
+    toast.success('Task has been deleted!', {
+      position: 'bottom-right',
+      hideProgressBar: true,
+    })
   }
 
   const onCloseCreateTask = () => {

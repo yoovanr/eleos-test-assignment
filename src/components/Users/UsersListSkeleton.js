@@ -15,13 +15,26 @@ function UsersListSkeleton() {
     >
       {
         Array(12).fill().map((item, index) => (
-          <Stack spacing={2} key={index} useFlexGap>
+          <Stack
+            spacing={2}
+            key={index}
+            useFlexGap
+          >
             <Card variant="outlined">
               <CardContent orientation="horizontal">
-                <Skeleton animation="wave" variant="circular" width={40} height={40} />
+                <Skeleton
+                  animation="wave"
+                  variant="circular"
+                  width={40}
+                  height={40}
+                />
 
                 <div>
-                  <Skeleton animation="wave" variant="text" sx={{ width: 120 }} />
+                  <Skeleton
+                    animation="wave"
+                    variant="text"
+                    sx={{ width: 120 }}
+                  />
 
                   <Skeleton
                     animation="wave"

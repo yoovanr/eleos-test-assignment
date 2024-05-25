@@ -43,8 +43,13 @@ function UsersList({ data }) {
               />
 
               <div>
-                <Typography level="title-md">{item.firstName} {item.lastName}</Typography>
-                <Typography level="body-xs">{item.email}</Typography>
+                <Typography level="title-md">
+                  {item.firstName} {item.lastName}
+                </Typography>
+
+                <Typography level="body-xs">
+                  {item.email}
+                </Typography>
               </div>
             </Box>
           </Sheet>

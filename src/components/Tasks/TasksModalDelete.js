@@ -10,8 +10,14 @@ import WarningRoundedIcon from '@mui/icons-material/WarningRounded'
 
 function TasksModalDelete({ item, onSuccess, onClose }) {
   return (
-    <Modal open={true} onClose={onClose}>
-      <ModalDialog variant="outlined" role="alertdialog">
+    <Modal
+      open={true}
+      onClose={onClose}
+    >
+      <ModalDialog
+        variant="outlined"
+        role="alertdialog"
+      >
         <DialogTitle>
           <WarningRoundedIcon />
 
@@ -25,11 +31,19 @@ function TasksModalDelete({ item, onSuccess, onClose }) {
         </DialogContent>
 
         <DialogActions>
-          <Button variant="solid" color="danger" onClick={() => onSuccess(item)}>
+          <Button
+            variant="solid"
+            color="danger"
+            onClick={() => onSuccess(item)}
+          >
             Delete
           </Button>
 
-          <Button variant="plain" color="neutral" onClick={onClose}>
+          <Button
+            variant="plain"
+            color="neutral"
+            onClick={onClose}
+          >
             Cancel
           </Button>
         </DialogActions>

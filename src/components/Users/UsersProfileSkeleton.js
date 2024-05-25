@@ -11,10 +11,19 @@ function UsersProfileSkeleton() {
     <Stack spacing={2} useFlexGap>
       <Card variant="outlined">
         <CardContent orientation="horizontal">
-          <Skeleton animation="wave" variant="circular" width={48} height={48} />
+          <Skeleton
+            animation="wave"
+            variant="circular"
+            width={48}
+            height={48}
+          />
 
           <div>
-            <Skeleton animation="wave" variant="text" sx={{ width: 120 }} />
+            <Skeleton
+              animation="wave"
+              variant="text"
+              sx={{ width: 120 }}
+            />
 
             <Skeleton
               animation="wave"
