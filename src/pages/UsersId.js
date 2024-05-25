@@ -10,6 +10,7 @@ import Divider from '@mui/joy/Divider'
 
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded'
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded'
+
 import AppLayout from '../components/App/AppLayout.js'
 
 import UsersProfile from '../components/Users/UsersProfile'
@@ -87,7 +88,10 @@ function UsersId() {
           User
         </Typography>
 
-        <Divider component="div" sx={{ my: 2 }} />
+        <Divider
+          component="div"
+          sx={{ my: 2 }}
+        />
 
         {
           isLoading
