@@ -28,8 +28,8 @@ function UsersList({ data }) {
               p: 2,
               listStyle: 'none',
               '&:hover': {
-                cursor: 'pointer', // Add cursor pointer on hover
-                boxShadow: 'md', // Optional: Add a hover effect for visual feedback
+                cursor: 'pointer',
+                boxShadow: 'md',
               },
             }}
             onClick={() => navigate(`/users/${item.id}`)}

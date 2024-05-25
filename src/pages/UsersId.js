@@ -24,7 +24,7 @@ function UsersId() {
 
   useEffect(() => {
     if (error && error.status === 404) {
-      navigate('/')
+      navigate('/users')
     }
   }, [error])
 
